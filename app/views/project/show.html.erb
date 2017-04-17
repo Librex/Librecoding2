@@ -1,16 +1,16 @@
 <% content_for :head do %>
-	<title><%= @project.name %> | BProCoder</title>
+	<title><%= @project.name %> | AnelloTec</title>
 	
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@BProCoder">
-	<meta name="twitter:creator" content="@BProCoder">
+	<meta name="twitter:site" content="@AnelloTec">
+	<meta name="twitter:creator" content="@AnelloTec">
 	<meta name="twitter:title" content="<%= @project.name %>">
 	<meta name="twitter:description" content="<%= @project.content %>">
 	<meta name="twitter:image:src" content="<%= image_url @project.image %>">
 
 	<!-- Open Graph data -->
-	<meta property="og:site_name" content="BProCoder">
+	<meta property="og:site_name" content="AnelloTec">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="<%= @project.name %>">
 	<meta property="og:description" content="<%= @project.content %>">
@@ -122,7 +122,6 @@
 						<hr>
 						
 
-						<h4>評価</h4>
 						<div><%= render 'reviews/form' if @joined && !@hasReview %></div>
 						<div><%= render 'reviews/index' %></div>
 

@@ -38,6 +38,8 @@ gem 'stripe'
 
 gem 'aws-sdk', '< 2.0'
 
+gem 'jquery-turbolinks'
+
 group :development, :test do
   gem 'byebug'
   gem 'spring'
