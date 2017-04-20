@@ -1,5 +1,10 @@
-<p>Welcome <%= @email %>!</p>
+<p>こんにちは、AnelloTec運営です。</p>
 
-<p>You can confirm your account email through the link below:</p>
+<p><%= @email %>さんの 仮登録を受け付けました！</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p>▼▼ 下記にアクセスし、登録を完了させてください ▼▼</p>
+<p><%= link_to '登録を完了させる', confirmation_url(@resource, confirmation_token: @token) %></p>
+
+<p>【このメールの内容に覚えがない方】</p>
+<p>このメールは、AnelloTecに登録申請された方に送信しています。</p>
+<p>メールの内容に覚えがない場合は、このメールを破棄のほどお願い申し上げます。</p>
